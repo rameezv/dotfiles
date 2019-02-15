@@ -1,16 +1,7 @@
-export PATH="/usr/local/bin:~/Scripts:$PATH"
-#GOPATH
-export GOPATH='~/go'
-export PATH="$GOPATH/bin:$PATH"
-export GOBIN="$GOPATH/bin"
-export PATH=$PATH:/usr/local/mysql/bin
-
 #the fuck?!?!?
 eval "$(thefuck --alias)"
 
 # Add aliases below this line
-
-alias adddockspacer="defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type='spacer-tile';}'&&killall Dock" #add spacer to dock
 
 alias ll="ls -alGFh"
 alias ls="ls -GFh"
@@ -18,13 +9,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias hgrep="history | grep"
 alias oops="fuck"
-alias vboot="inv start_all -b && inv start IAM"
-alias vbootmin="inv start VBC,marketplace,VFF,BS,CIS,developer-central,marketplace-go,listing-distribution,CS,ST,marketing-automation,MS,automations,IAM -b && inv start -b "
-alias vstopmin="inv stop --force VBC,marketplace,VFF,BS,CIS,developer-central,marketplace-go,listing-distribution,CS,ST,marketing-automation,MS,automations && inv stop --force "
-alias ministart="minikube start --v=999 --logtostderr"
-alias vbb="inv start -b "
-alias vsb="inv stop --force "
-alias vlogs="inv logs"
 alias re-source="source ~/.commonrc"
 alias myip='curl ifconfig.co'
 alias cowwhat='fortune | cowsay -f $(printf "%s\n" `cowsay -l | tail -n+2` | gshuf -n1) | lolcat'
@@ -34,4 +18,3 @@ alias ebash='vim ~/.bash_profile'
 alias grhh='git reset --hard HEAD'
 alias grsh='git reset HEAD'
 alias grhm='git reset --hard origin/master'
-alias ybw='yarn build:watch'
